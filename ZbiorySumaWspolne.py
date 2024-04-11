@@ -1,0 +1,18 @@
+print("podaj ilość elementów 1 zbioru")
+i1=int(input())
+zbior1=set()
+for a in range(0,i1):
+    print(f"Podaj {a+1} element zbioru")
+    temp=set(input())
+    zbior1=zbior1.union(temp)
+print("podaj ilość elementów 2 zbioru")
+i2=int(input())
+zbior2=set()
+for a in range(0,i2):
+    print(f"Podaj {a+1} element zbioru")
+    temp=set(input())
+    zbior2=zbior2.union(temp)
+suma=zbior1.union(zbior2)
+print(f"Suma zbiorów to: {suma}")
+wspolne=zbior1.intersection(zbior2)
+print(f"Część wspólna zbiorów to: {wspolne}")
